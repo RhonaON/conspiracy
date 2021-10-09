@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+    <title>Conspiracy Theory Generator!</title>
+    <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/normalise.css" />
+    <link rel="stylesheet" href="conspiracy-pinwheel.css" />
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <h1 class="header__title">
+                WAKE UP 🐑 <br /> Spin the conspiracy wheels <br /> and learn the TRUTH!!
+            </h1>
+        </header>
+
+        <div class="pinwheels">
+            <img class="pinwheels__pinwheel" src="pinwheel.png" alt="Colourful pinwheel" title="Conspiracy Pinwheel" id="pinwheel0" />
+            <img class="pinwheels__pinwheel" src="pinwheel.png" alt="Colourful pinwheel" title="Conspiracy Pinwheel" id="pinwheel1" />
+            <img class="pinwheels__pinwheel" src="pinwheel.png" alt="Colourful pinwheel" title="Conspiracy Pinwheel" id="pinwheel2" />
+        </div>
+
+        <div class="conspiracy">
+            <div class="conspiracy__theory" id=theory-beginning></div>
+            <div class="conspiracy__theory" id=theory-middle></div>
+            <div class="conspiracy__theory" id=theory-end></div>
+        </div>
+
+        <div class="spinner">
+            <button class="spinner__button" onclick="displayTheory()">Spin</button>
+        </div>
+    </main>
+    <script src="conspiracy-pinwheel.js"></script>
+</body>
+
+</html>

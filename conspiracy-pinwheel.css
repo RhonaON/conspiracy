@@ -1,0 +1,86 @@
+.main {
+    font-family: 'Courier New', Courier, monospace, cursive;
+    background-color: forestgreen;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header {}
+
+.header__title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.pinwheels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pinwheels__pinwheel {
+    width: 25%
+}
+
+.conspiracy {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.conspiracy__theory {
+    width: 33.33%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.spinner {}
+
+.spinner__button {
+    background-color: darkred;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+    display: block;
+    position: middle;
+    font-family: monospace;
+}
+
+
+/* small screens */
+
+@media screen and (max-width: 48em) {
+    .header__title {
+        font-size: 1.5rem;
+    }
+    .conspiracy__theory {
+        font-size: 1.5rem;
+    }
+    .spinner__button {
+        font-size: 1.5rem;
+        width: 6rem;
+        height: 3rem;
+    }
+}
+
+
+/* big screens */
+
+@media screen and (min-width: 48em) {
+    .header__title {
+        font-size: 2.5rem;
+    }
+    .conspiracy__theory {
+        font-size: 2rem;
+    }
+    .spinner__button {
+        font-size: 2rem;
+        width: 8rem;
+        height: 4rem;
+    }
+}
