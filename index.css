@@ -29,6 +29,10 @@ body,
 
 .pinwheels__pinwheel {
     width: 25%;
+}
+
+.pinwheels--spin {
+    width: 25%;
     animation-name: rotate;
     animation-duration: 3s;
 }

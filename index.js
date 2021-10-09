@@ -11,9 +11,9 @@ TODO:
 
 //Each pinwheel image is it's own var for later CSS/JS animation
 
-var pinwheel0 = document.getElementById("pinwheel0")
-var pinwheel1 = document.getElementById("pinwheel1")
-var pinwheel2 = document.getElementById("pinwheel2")
+var pinwheelBeginningElement = document.getElementById("pinwheel-beginning")
+var pinwheelMiddleElement = document.getElementById("pinwheel-middle")
+var pinwheelEndElement = document.getElementById("pinwheel-end")
 
 
 //Get each pinwheel from HTML doc
@@ -21,9 +21,6 @@ var pinwheel2 = document.getElementById("pinwheel2")
 var theoryBeginningElement = document.getElementById("theory-beginning")
 var theoryMiddleElement = document.getElementById("theory-middle")
 var theoryEndElement = document.getElementById("theory-end")
-
-
-var animationElement = document.getElementsByClassName("pinwheels__pinwheel")
 
 //Function to randomly generate beginning, middle and end of theory
 
@@ -46,18 +43,31 @@ let end = ["babies", " with live laugh love propaganda", "with the bisexual agen
 
 //Create function that combines random beginning middle and end 'on-click' 
 //*Should also display the theory as a text output
-
+//Fuction takes spin stop and start functions below to time spinning
 
 function displayTheory() {
     resetTheoryBeginning()
     resetTheoryMiddle()
     resetTheoryEnd()
 
+    spinPinwheel(pinwheelBeginningElement)
 
-    displayTheoryBeginning()
-    setTimeout(displayTheoryMiddle, 2000)
-    setTimeout(displayTheoryEnd, 4000)
+    setTimeout(function() {
+        stopPinwheel(pinwheelBeginningElement)
+        displayTheoryBeginning()
+        spinPinwheel(pinwheelMiddleElement)
+    }, 3000)
 
+    setTimeout(function() {
+        stopPinwheel(pinwheelMiddleElement)
+        displayTheoryMiddle()
+        spinPinwheel(pinwheelEndElement)
+    }, 6000)
+
+    setTimeout(function() {
+        stopPinwheel(pinwheelEndElement)
+        displayTheoryEnd()
+    }, 9000)
 }
 
 //Functions to generate beginning middle and end of theory
@@ -106,4 +116,14 @@ function resetTheoryMiddle() {
 
 function resetTheoryEnd() {
     theoryEndElement.textContent = ''
+}
+
+//Fuctions to add and remove CSS pinwheels--spin class modifier with keyframes animation
+
+function spinPinwheel(pinwheelElement) {
+    pinwheelElement.classList.add('pinwheels--spin')
+}
+
+function stopPinwheel(pinwheelElement) {
+    pinwheelElement.classList.remove('pinwheels--spin')
 }
