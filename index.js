@@ -3,12 +3,11 @@
 TODO:
 - [x] single textbox output
 - [x] three textbox output
-- [ ] use BEM methodology for css
+- [x] use BEM methodology for css
 - [ ] animate pin wheels
-- [ ] responsive styles on mobile
+- [x] responsive styles on mobile
 
 */
-
 
 //Each pinwheel image is it's own var for later CSS/JS animation
 
@@ -23,6 +22,8 @@ var theoryBeginningElement = document.getElementById("theory-beginning")
 var theoryMiddleElement = document.getElementById("theory-middle")
 var theoryEndElement = document.getElementById("theory-end")
 
+
+var animationElement = document.getElementsByClassName("pinwheels__pinwheel")
 
 //Function to randomly generate beginning, middle and end of theory
 
@@ -56,8 +57,13 @@ function displayTheory() {
     displayTheoryBeginning()
     setTimeout(displayTheoryMiddle, 2000)
     setTimeout(displayTheoryEnd, 4000)
+
 }
 
+
+function animation() {
+    animationElement = displayTheory()
+}
 //Functions to generate beginning middle and end of theory
 
 function generateTheoryBeginning() {

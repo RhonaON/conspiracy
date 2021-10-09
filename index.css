@@ -28,7 +28,18 @@ body,
 }
 
 .pinwheels__pinwheel {
-    width: 25%
+    width: 25%;
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .conspiracy {
