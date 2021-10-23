@@ -4,7 +4,7 @@ TODO:
 - [x] single textbox output
 - [x] three textbox output
 - [x] use BEM methodology for css
-- [ ] animate pin wheels
+- [x] animate pin wheels
 - [x] responsive styles on mobile
 
 */
@@ -38,7 +38,7 @@ let beginning = ["The Queen", "Nicolas Cage", "Bill Gates", "The Jews", "George 
 
 let middle = ["secretly owns", "controls", "is going to destroy", "is responsible for", "invented", "funds", "eats", "undermines good Christian values", "is building a communist agenda", "is stealing our divine energy source", "coercing us to join a sex cult", "is putting 1080 in baby formula", "is contaminating the gene pool", "is feminising men", "is promoting abortion", "reprogramming our DNA", "replacing children with changelings", "dosing vape juice", "prpagating pro coriander propaganda", "censoring TikTok truths", "genetically modifying the elderly", "is trying to make us believe in dinosaurs", "is spreading the myth of 'electricity'"]
 
-let end = ["killing babies", " with live laugh love propaganda", "with the bisexual agenda", "the global economy", "by harvesting adrenochrome from children", "chem trails", "bitcoin", "NFTs", "the internet", "heroin", "for BIG DATA", "for oil", "with nuclear waste", "the facebook algorithm", "by teaching critical race theory in schools", "with affirmitive action", "with 5G", "by FORCING us to sneeze into our elbows", "with perpetual Briscoes sales", "with a sound set of sustainable development goals", "militant veganism", "making us all infertile!", "tiger king propaganda", "the climate change LIE", "by putting religion on the blockchain", "to attack and de-throne God", "to calcify our pineal glands", "to lower our collective vibration"]
+let end = ["killing  babies", " with live laugh love propaganda", "with the bisexual agenda", "the global economy", "by harvesting adrenochrome from children", "chem trails", "bitcoin", "NFTs", "the internet", "heroin", "for BIG DATA", "for oil", "with nuclear waste", "the facebook algorithm", "by teaching critical race theory in schools", "with affirmitive action", "with 5G", "by FORCING us to sneeze into our elbows", "with perpetual Briscoes sales", "with a sound set of sustainable development goals", "militant veganism", "making us all infertile!", "tiger king propaganda", "the climate change LIE", "by putting religion on the blockchain", "to attack and de-throne God", "to calcify our pineal glands", "to lower our collective vibration"]
 
 
 //Create function that combines random beginning middle and end 'on-click' 
